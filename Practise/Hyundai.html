@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>HYUNDAI Login Page</title>
+        <style>
+            #main_div{
+                background:#ff99ff;
+                width:100%;
+                padding-left:80px;
+            }
+            #sign_div{
+                background:#ffccff;
+                color:#3300ff;
+                float:left;
+                width:330px;
+                height:400px;
+                margin-left:150px;
+                margin-top:80px;
+                opacity:0.8;
+                padding-left:25px;
+            }
+            #login_div{
+                background:#ffccff;
+                color:#3300ff;
+                float:left;
+                width:330px;
+                height:400px;
+                margin-left:300px;
+                margin-top:80px;
+                padding-left:25px;
+                text-align:center;
+            }
+            h1{
+                color:#3300cc;
+                display:inline;
+                font-size:40px;
+                margin-left:450px;
+            }
+            .sign_label{
+                font-size:20px;
+            }
+            .sign_input{
+                font-size:20px;
+                margin-bottom:15px;
+            }
+            .sign_span{
+                font-size:22px;
+                color:#ff0000;
+            }
+            .sign_button{
+                width:250px;
+                height:30px;
+                font-size:20px;
+                color:#0033ff;
+            }
+            .login_input{
+                font_size:20px;
+                width:300px;
+                height:30px;
+                margin-bottom:20px;
+                border-radius:5px;
+                border:0;
+            }
+            .login_button{
+                font-size:20px;
+                width:308px;
+                height:35px;
+                background:linear-gradient(to bottom,#ffff33,#66ff33);
+                border:0;
+                border-radius:10px;
+            }
+            .login_button:hover{
+                background:linear-gradient(to bottom,#66ff33,#ffff33);
+            }
+            a{
+                font-size:18px;
+                text-decoration:none;
+            }
+        </style>
+        </title>
+    </head>
+    <body style="background:url(C:\Users\Murali Mohan\OneDrive\Desktop\HTML\HTML Images for practise\Hyundai-Aura.jpg); background-size:cover;">
+        <div id="main_div">
+            <img src="C:\Users\Murali Mohan\OneDrive\Desktop\HTML\HTML Images for practise\HyundaiLogoStacked.gif" width="130px" height="80px" aligh="middle">
+            <h1 align=middle>HYUNDAI</h1>
+        </div>
+        <div id="sign_div">
+            <form id="frm1" action="registeruser.jsp">
+                <h2 align="center">Registration Form</h1>
+                <label class="sign_label">FullName<span class="sign_span">*</span></label><br>
+                <input type="text" class="sign_input" id="fullName" name="fullName" required/><br>
+
+                <label class="sign_label">Userid<span class="sign_span">*</span></label><br>
+                <input type="text" class="sign_input" id="userid" name="userid" required/><br>
+                
+                <label class="sign_label">Mobile Number<span class="sign_span">*</span></label><br>
+                <input type="text" class="sign_input" id="phone" name="phone" required/><br>
+                
+                <label class="sign_label">Mailid<span class="sign_span">*</span></label><br>
+                <input type="text" class="sign_input" id="mailid" name="mailid" required/><br>
+                
+                <button class="sign_button" name="sb" value="Submit">Finish</button>
+            </form>
+        </div>
+        <div id="login_div">
+            <form id="frm2" action="./loginservlet" method="post" autocomplete="off">
+                <h2>Login Form</h2>
+                <input type="email" class="login_input" id="Userid" name="Userid" placeholder="enter email or userid"/><br>
+                <input type="password" class="login_input" id="pw" name="pwd" placeholder="enter password"/><br>
+                <button name="sb" value="login" class="login_button">Log in</button>
+            </form>
+            <hr>
+            <br>
+            <a href="forgotpw.html">Forgotten Password</a>
+        </div>
+    </body>
+</html>

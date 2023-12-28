@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body >
+        <input type="text" id="nor" placeholder="enter n value">
+        <button onclick="prime()">print</button>
+            <script>
+                function prime()
+                {
+                    let n=parseInt(nor.value);
+                    let c=0;
+                    for(i=1;i<=n;i++)
+                        {
+                            if(n%i==0){
+                                c++;
+                            }
+                        }
+                    if(c==2){
+                        document.write(n+" is a Prime Number")
+                    }
+                    else{
+                        document.write(n+" is a not a Prime Number")
+                    }
+                }
+            </script>
+        </select>
+    </body>
+</html>

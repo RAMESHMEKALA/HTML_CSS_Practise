@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body >
+        <input type="text" id="nor" placeholder="enter n value">
+        <button onclick="Factors()">print</button>
+            <script>
+                function Factors()
+                {
+                    let n=parseInt(nor.value);
+                    document.write("Factors of "+n+" is: ")
+                    for(i=1;i<=n;i++)
+                        {
+                            if(n%i==0){
+                                document.write(i," ")
+                            }
+                        }
+                }
+            </script>
+        </select>
+    </body>
+</html>

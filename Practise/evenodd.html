@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body >
+        <input type="text" id="nor" placeholder="enter n value">
+        <button onclick="EvenOdd()">print</button>
+            <script>
+                function EvenOdd()
+                {
+                    let n=parseInt(nor.value);
+                    document.write("Even Numbers Between 1 to "+n+" is: ")
+                    for(i=1;i<=n;i++)
+                        {
+                            if(i%2==0)
+                            document.write(i," ");
+                        }
+                    document.write("<br>");
+                    document.write("Odd Numbers Between 1 to "+n+" is: ")
+                    for(i=1;i<=n;i++)
+                        {
+                            if(i%2==1)
+                            document.write(i," ");
+                        }
+                }
+            </script>
+        </select>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title> Computers Adda </title>
+</head>
+<body>
+	<h1 align="center"><font color="brown"><b>Extra Practical Output</b></font></h1>
+	<table border="1" align="center" height="300" width="300">
+	<tr align="center" valign="bottom"><center><b><td bgcolor="grey">NAME</td><td bgcolor="green">CLASS</td><td bgcolor="green">MARKS</td><td bgcolor="grey">AVERAGE</td></tr>
+	<tr align="center" valign="bottom"><td bgcolor="blue">RAVI</td><td bgcolor="green">IX</td><td bgcolor="green">547</td><td bgcolor="blue">93.7</td></tr>
+	<tr align="center" valign="bottom"><td bgcolor="blue">GANESH</td><td bgcolor="green">VII</td><td bgcolor="green">423</td><td bgcolor="blue">74.3</td></tr>
+	<tr align="center" valign="bottom"><td bgcolor="grey">VIJAY</td><td bgcolor="green">X</td><td bgcolor="green">502</td><td bgcolor="grey">87.6</td></tr></center></b>
+	</table>
+</body>
+</html>

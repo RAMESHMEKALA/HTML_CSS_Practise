@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <style>
+            .div{
+                width:300px;
+                background-color: #ff9966;
+                padding:15px;
+                visibility:hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset style="width:600px;">
+            <legend>Marital Status</legend>
+            <input type="radio" id="ms1" name="ms" value="Single" checked><label>Single</label>&nbsp;&nbsp;
+            <input type="radio" id="ms2" name="ms" value="Married" checked><label>Married</label>&nbsp;&nbsp;
+            <input type="radio" id="ms3" name="ms" value="Divorced" checked><label>Divorced</label>&nbsp;&nbsp;
+            <input type="radio" id="ms4" name="ms" value="Divorced" checked><label>Widowed</label>&nbsp;&nbsp;
+            <input type="radio" id="ms5" name="ms" value="Nun" checked><label>Never Marring</label>
+        </fieldset>
+        <div id="d1" class="div1">
+            <label>Date Of Marriage</label><br>
+            <input type="date" id="dom" name="dom"><br>
+            <label>Spouse Name</label><br>
+            <input type="text" id="spouse_name" name="s_name">
+        </div>
+        <script>
+            //hiding this div tag
+            document.getElementById('ms2').onclick=()=>{document.getElementById('d1').style.visibility='visible';};
+            //showing complete div tags
+            document.getElementById('ms1').onclick=()=>{document.getElementById('d1').style.visibility='hidden';};
+            document.getElementById('ms3').onclick=()=>{document.getElementById('d1').style.visibility='hidden';};
+            document.getElementById('ms4').onclick=()=>{document.getElementById('d1').style.visibility='hidden';};
+            document.getElementById('ms5').onclick=()=>{document.getElementById('d1').style.visibility='hidden';};
+        </script>
+    </body>
+</html>

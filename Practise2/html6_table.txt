@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title> Computers Adda </title>
+</head>
+<body>
+	<h1 align="center"><font color="green"><b>Extra Practical Output</b></font></h1>
+	<table border="1" align="center">
+	<thead><b><center><th>EMP.NO</th><th>EMP.NAME</th><th>EMP.SALARY</th><th>NET.SAL</th></center></b></thead>
+	<tr><td>1201</td><td>Srinivasa Rao</td><td>20,500/-</td><td>17,400</td></tr>
+	<tr><td>1202</td><td>Rama Rao</td><td>18,200</td><td>16,050</td></tr>
+	<tr><td>1203</td><td>Vijay Kanth</td><td>16,450</td><td>14,400</td></tr>
+	<tr><td>1204</td><td>Rajesh Kumar</td><td>27,300</td><td>24,850</td></tr>
+	</table>
+</body>
+</html>

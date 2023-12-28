@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shopping</title>
+    </head>
+    <body>
+        <input type="text" id="pn" name="pn" placeholder="Enter Product Name" style="text-transform: uppercase;">
+        &nbsp;&nbsp;
+        <input type="text" id="inv" name="inv" placeholder="Enter Quantity">
+        &nbsp;&nbsp;
+        <input type="text" id="up" name="up" placeholder="Enter Unit Price">
+        &nbsp;&nbsp;
+        <button onclick="Addproduct()">Add To Cart</button>
+        &nbsp;&nbsp;
+        <button onclick="GenerateBill()">Generate Bill</button>
+        &nbsp;&nbsp;
+
+        <script>
+            var products=new Array();
+            function product(name,inventory,unit_price)
+            {
+                this.name=name;
+                this.inventory=inventory;
+                this.unit_price=unit_price;
+            }
+            function Addproduct()
+            {
+                //products[0]=new product(pn.value,inv.value,up.value)
+                //product.unshift((new product(pn.value,inv.value,up.value)))
+                products.push((new product(pn.value,inv.value,up.value)))
+                pn.value="";inv.value="";up.value="";//-----clearing all values
+                pn.focus();//-------placing Cursor
+                alert("Done!");
+            }
+            function GenerateBill()
+            {
+                let totalBillAmt=0;
+                let prodAmt=0;
+                let slno=1;
+                for(let p of products)   //--------extracting 1 by 1 on products 
+                {
+                    prodAmt=p.inventory*p.unit_price;
+                    document.write(`${slno} &nbsp;&nbsp;&nbsp; ${p.name} &nbsp;&nbsp;&nbsp; ${p.inventory} &nbsp;&nbsp;&nbsp; ${p.unit_price} &nbsp;&nbsp;&nbsp; &#8377;${prodAmt}<br>`);
+                    totalBillAmt+=prodAmt;
+                    slno++;
+                }
+                document.write(`Total Bill Amount:&#8377;${totalBillAmt}<br>`)
+            }
+        </script>
+    </body>
+</html>

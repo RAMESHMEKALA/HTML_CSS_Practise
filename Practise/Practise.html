@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body >
+        <table style="background-color:#ffff99" align="center">
+            <caption>Student Marks Report</caption>
+            <tr>
+                <td><label>RollN0</label></td>
+                <td><input type="text" id="rno"/></td>
+            </tr>
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text" id="sna"/></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><label>Marks</label></td>
+            </tr>
+            <tr>
+                <td><label>HTML</label></td>
+                <td><input type="text" id="hm"/></td>
+            </tr>
+            <tr>
+                <td><label>CSS</label></td>
+                <td><input type="text" id="cm"/></td>
+            </tr>
+            <tr>
+                <td><label>JavaScript</label></td>
+                <td><input type="text" id="jm"/></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><button onclick="GetResult()">getresult</button></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><output id="total"></output></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><output id="average"></output></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><output id="grade"></output></td>
+            </tr>
+        </table>
+        <script>
+            function GetResult()
+            {
+                let h,c,j,tot,avg,grd;
+                h=parseInt(hm.value)
+                c=parseInt(cm.value)
+                j=parseInt(jm.value)
+                tot=h+c+j;
+                avg=tot/3
+
+                if(h>=40 && c>=40 && j>=40)
+                {
+                    if(avg>=80)
+                        grd="A+";
+                    else if(avg>=70)
+                        grd="A";
+                    else if(avg>=60)
+                        grd="B+";
+                    else if(avg>=50)
+                        grd="B";
+                    else
+                        grd="C";
+                }
+                else{
+                    grd="Fail";
+                }
+                total.value="Total Marks:"+tot
+                average.value="Average:"+avg
+                grade.value="Grade:"+grd
+            }
+        </script>
+    </body>
+</html>

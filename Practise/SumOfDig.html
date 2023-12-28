@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body >
+        <input type="text" id="nor" placeholder="enter n value">
+        <button onclick="SumOfDig()">print</button>
+            <script>
+                function SumOfDig()
+                {
+                    let n=parseInt(nor.value);
+                    let sum=0;
+                    document.write("Sum of Digits of "+n+" is:")
+                    while(n!=0)
+                    {
+                        r=n%10;
+                        sum=sum+r;
+                        n//=10;
+                    }
+
+                    document.write(sum)
+                }
+            </script>
+        </select>
+    </body>
+</html>

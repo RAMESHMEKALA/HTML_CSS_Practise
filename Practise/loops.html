@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+    </head>
+    <body >
+        <input type="text" id="nor" placeholder="enter no.of rows">
+        <button onclick="printTri()">print</button>
+            <script>
+                function printTri()
+                {
+                    let n=parseInt(nor.value);
+                    for(i=1;i<=n;i++){
+                        for(j=1;j<=i;j++){
+                            document.write("&#128512");
+                        }
+                    document.write("<br>")
+                    }
+                    for(i=n-1;i>=1;i--){
+                        for(j=1;j<=i;j++){
+                            document.write("&#128512");
+                        }
+                    document.write("<br>")
+                    }
+                }
+            </script>
+        </select>
+    </body>
+</html>

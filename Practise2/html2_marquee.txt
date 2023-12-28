@@ -1,0 +1,10 @@
+<html>
+<head>
+	<title> Computers Adda </title>
+</head>
+<body bgcolor="green">
+	<h1><b><center><font color="yellow">MARQUEE TAG with attributes</font></b></h1><hr><hr>
+	<h3>You can easily change the formatting of selected text by choosing a look for the selected text from the quick styles gallery on the home tab.You can also format text directrly b y using the other controls on the home tab. Most controls offer a choice of using the look from the current theme or using the format that you specify directly.<p>To change overall look of your document,choose new Theme element on the page layout tab . To change the looks available in the Quick style gallery,use the Change Current Quick style Set command.Both the Themes gallery and the Quick styles gallery  provide the commands so that you can always restore the look of your document to the original contained in your computer template.</p></h3><hr><hr>
+	<marquee bgcolor="white" direction="right"><b><font color="purple">MS_OFFICE,TALLY,PHOTOSHOP,PAGEMAKER,CORELDRAW,AUTOCAD,C,C++,JAVA,HTML</font></b></marquee><hr><hr>
+</body>
+</html>
